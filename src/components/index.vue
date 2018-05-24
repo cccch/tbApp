@@ -68,7 +68,7 @@
             <div class="top-line-banner">
                 <div >
                     <img width="85px" src = "../assets/images/carimg.jpg" alt = ""/>
-                    <span >汽车</span>
+                    <span>汽车</span>
                         <span>此车上市有望成为黑马，售价8万左右</span>
                     <br/>
                         <span>垂钓</span>
@@ -388,44 +388,44 @@
         height: 48px;
     }
     .logo ul li:nth-child(1) div{
-        background: url(https://gw.alicdn.com/tps/TB1d30fPVXXXXbGXXXXXXXXXXXX-183-144.png_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon1.png) no-repeat 0 0;
         background-size: cover;
 
     }
     .logo ul li:nth-child(2) div{
-        background: url(https://gw.alicdn.com/tfs/TB1lZyXcQyWBuNjy0FpXXassXXa-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon2.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(3) div{
-        background: url(https://gw.alicdn.com/tfs/TB163FbPVXXXXcKXXXXXXXXXXXX-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon3.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(4) div{
-        background: url(https://gw.alicdn.com/tps/TB1eXc7PFXXXXb4XpXXXXXXXXXX-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon4.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(5) div{
-        background: url(https://gw.alicdn.com/tfs/TB1PDDqetzJ8KJjSspkXXbF7VXa-183-144.png_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon5.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(6) div{
-        background: url(https://gw.alicdn.com/tfs/TB1282DexGYBuNjy0FnXXX5lpXa-183-144.png_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon6.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(7) div{
-        background: url(https://gw.alicdn.com/tfs/TB1RFPNbuuSBuNjy1XcXXcYjFXa-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon7.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(8) div{
-        background: url(https://gw.alicdn.com/tps/TB1cK3wPFXXXXc7aXXXXXXXXXXX-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon8.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(9) div {
-        background: url(https://gw.alicdn.com/tfs/TB1JEfbQFXXXXaGXVXXXXXXXXXX-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon9.png) no-repeat 0 0;
         background-size: cover;
     }
     .logo ul li:nth-child(10) div{
-        background: url(https://gw.alicdn.com/tfs/TB11MUWSpXXXXa2apXXXXXXXXXX-183-144.png?getAvatar=1_.webp) no-repeat 0 0;
+        background: url(../assets/images/icon10.png) no-repeat 0 0;
         background-size: cover;
     }
     /*头条*/

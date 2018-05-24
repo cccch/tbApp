@@ -35,6 +35,7 @@
   }
   #app {
     height: 100%;
+    min-width: 377px;
   }
 
 </style>
