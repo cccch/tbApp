@@ -64,10 +64,10 @@
             </ul>
         </div>
         <div class="top-line">
-            <div><img src = "https://gw.alicdn.com//tfs//TB1TBEMXU6FK1Jjy1XdXXblkXXa-105-107.png_.webp" width="37px"/></div>
+            <div><img src = "../assets/images/taotoutiao.png" width="37px"/></div>
             <div class="top-line-banner">
                 <div >
-                    <img width="85px" src = "https://ossgw.alicdn.com/tbheadline/g0/24hHn3c/m/1308c75248304cee91d840e1f98be296.jpeg" alt = ""/>
+                    <img width="85px" src = "../assets/images/carimg.jpg" alt = ""/>
                     <span >汽车</span>
                         <span>此车上市有望成为黑马，售价8万左右</span>
                     <br/>
@@ -75,7 +75,7 @@
                         <span>牢记这2种用饵技能，鲤鱼一钓就上瘾</span>
                 </div>
                 <div>
-                    <img width="85px" src = "https://ossgw.alicdn.com/tbheadline/g0/24hHn3c/m/4bba1edb238f4fb1875852a0e278a81c.jpeg" alt = ""/>
+                    <img width="85px" src = "../assets/images/flower.jpg" alt = ""/>
                         <span>时尚</span>
                         <span>8种自带爆盆体质的多肉，你了解吗？</span>
                     <br/>
@@ -90,13 +90,13 @@
                 <div class="list-1-1">
                     <div>
                         <router-link to="/buy10001">
-                            <img  src= "https://img.alicdn.com/i3/TB2sL6ndhGYBuNjy0FnXXX5lpXa_!!833473069-0-beehive-scenes.jpg_200x200q85s150.jpg_.webp" alt = ""/>
+                            <img  src= "../assets/images/phone.jpg" alt = ""/>
                             <span>全面屏手机时代，看下这三款</span>
                         </router-link>
                     </div>
                     <div>
                         <router-link  to="/buy10002">
-                            <img src = "https://img.alicdn.com/tps/TB14acidPnD8KJjSspbSuvbEXXa.jpg_200x200q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/shoes.jpg" alt = ""/>
                             <span><i>女式休闲鞋</i></span>
                         </router-link>
                     </div>
@@ -106,40 +106,40 @@
                         <span>潮男养成</span>
                         <i>有品有范有风尚</i>
                         <router-link to="/buy10003">
-                            <img src= "https://gw.alicdn.com/imgextra/i4/48/TB26TF2nH_0UKFjy1XaXXbKfXXa_!!48-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src= "../assets/images/product1.jpg" alt = ""/>
                         </router-link>
                         <router-link to="/buy10004">
-                            <img src = "https://gw.alicdn.com/imgextra/i2/168/TB2I0FQigMPMeJjy1XdXXasrXXa_!!168-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product2.jpg" alt = ""/>
                         </router-link>
                     </div>
                     <div>
                         <span>装备天地</span>
                         <i>武装你的兴趣爱好</i>
                         <router-link to="/buy10005">
-                            <img src = "https://gw.alicdn.com/imgextra/i3/1/TB24UDiXrsTMeJjSszgXXacpFXa_!!1-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product3.jpg" alt = ""/>
                         </router-link>
                         <router-link to="/buy10006">
-                            <img src = "https://gw.alicdn.com/imgextra/i2/161/TB2lgNhzItnpuFjSZFvXXbcTpXa_!!161-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product4.jpg" alt = ""/>
                         </router-link>
                     </div>
                     <div>
                         <span>科技前沿</span>
                         <i>发现智能数码</i>
                         <router-link to="/buy10007">
-                            <img src = "https://gw.alicdn.com/imgextra/i4/118/TB2s0plvB8lpuFjy0FnXXcZyXXa_!!118-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product5.jpg" alt = ""/>
                         </router-link>
                         <router-link to="/buy10008">
-                            <img src = "https://img.alicdn.com/i3/TB2xsl6ci0TMKJjSZFNXXa_1FXa_!!59-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product6.jpg" alt = ""/>
                         </router-link>
                     </div>
                     <div>
                         <span>难得好货</span>
                         <i>潮流尖货，限时首发</i>
                         <router-link to="/buy10009">
-                            <img src = "https://gw.alicdn.com/imgextra/i4/51/TB2fyqXbe285uJjSZFwXXc.cVXa_!!51-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product7.jpg" alt = ""/>
                         </router-link>
                         <router-link to="/buy10010">
-                            <img src = "https://gw.alicdn.com/imgextra/i1/10/TB2sgDbAhtmpuFjSZFqXXbHFpXa_!!10-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                            <img src = "../assets/images/product8.jpg" alt = ""/>
                         </router-link>
                     </div>
                 </div>
@@ -154,15 +154,15 @@
                             <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
                             <span>10人说好</span>
                         </li>
-                        <li><img src = "https://img.alicdn.com/i3/TB21tPEXInI8KJjSsziXXb8QpXa_!!181-2-luban.png_100x100q85s150.jpg_.webp" alt = ""/>
+                        <li><img src = "../assets/images/imgbag.jpg" alt = ""/>
                             <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
                             <span>10人说好</span>
                         </li>
-                        <li><img src = "https://gw.alicdn.com/tfscom/TB1a1QRe8jTBKNjSZFNSuusFXXa.jpg_200x200q85s150.jpg_.webp" alt = ""/>
+                        <li><img src = "../assets/images/imgflower.jpg" alt = ""/>
                             <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
                             <span>10人说好</span>
                         </li>
-                        <li><img src = "https://gw.alicdn.com/tfscom/TB2t3XPkk.HL1JjSZFuXXX8dXXa_!!50032004.jpg_200x200q85s150.jpg_.webp" alt = ""/>
+                        <li><img src = "../assets/images/imgring.jpg" alt = ""/>
                             <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
                             <span>10人说好</span>
                         </li>
@@ -544,20 +544,17 @@
         font-size: 12px;
         color: #fff;
     }
-    .list-1-2 {
-        /*display: flex;*/
-        /*justify-content: space-around;*/
-        /*flex-wrap: wrap;*/
-    }
+
 
     .list-1-2 {
+        display: flex;
         flex-wrap: wrap;
+        width: 100%;
 
     }
     .list-1-2>div{
         width: 50%;
         display: flex;
-        flex:1;
         justify-content: space-around;
         position: relative;
         height: 125px;
