@@ -66,7 +66,7 @@
         <div class="top-line">
             <div><img src = "../assets/images/taotoutiao.png" width="37px"/></div>
             <div class="top-line-banner">
-                <div >
+                <div ref="top-line-banner-box1">
                     <img width="85px" src = "../assets/images/carimg.jpg" alt = ""/>
                     <span>汽车</span>
                         <span>此车上市有望成为黑马，售价8万左右</span>
@@ -74,7 +74,7 @@
                         <span>垂钓</span>
                         <span>牢记这2种用饵技能，鲤鱼一钓就上瘾</span>
                 </div>
-                <div>
+                <div ref="top-line-banner-box2">
                     <img width="85px" src = "../assets/images/flower.jpg" alt = ""/>
                         <span>时尚</span>
                         <span>8种自带爆盆体质的多肉，你了解吗？</span>
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <div class="tao list-3">
-                <h3>
+                <h3 ref="tao-time">
                     <img src = "../assets/images/taoqianggou.png" alt = "" width="90px"/>
                     <span>距离结束：</span><i>00</i>:<i>00</i>:<i>00</i>
                     </h3>
@@ -200,74 +200,23 @@
     import { Swipe, SwipeItem } from 'mint-ui';
     Vue.component(Swipe.name, Swipe);
     Vue.component(SwipeItem.name, SwipeItem);
+    import {mapActions,mapGetters} from 'vuex';
 
     export default {
         data: function () {
             return {}
         },
+        methods:mapActions([
+                'headRolling',
+                'countDown'
+        ]),
         mounted:function(){
-            //头条滚动
-            (function(){
-                function animateself(obj,target){
-                    clearInterval(obj.timer);
-                    obj.timer = setInterval(function(){
-                        var step = (target - obj.offsetTop)/10;
-                        step = step > 0 ?   Math.ceil(step):Math.floor(step);
-                        obj.style.top = obj.offsetTop + step + "px";
-                        if(target == obj.offsetTop){
-                            clearInterval(obj.timer);
-                        }
-                    },30)
-                }
+            //调用头条滚动函数
+            this.headRolling(this.$refs['top-line-banner-box1']);
+            this.headRolling(this.$refs['top-line-banner-box2']);
+            //调用倒计时事件
+            this.countDown(this.$refs['tao-time'])
 
-                var demo = document.querySelector('.top-line-banner').children;
-                setInterval(function(){
-                    if(demo[0].offsetTop==-65||demo[0].offsetTop==65){
-                        demo[0].style.top = '65px';
-                        animateself(demo[0],0)
-                    }
-                    else if(demo[0].offsetTop==0){
-                        animateself(demo[0],-65)
-
-                    }
-                    if(demo[1].offsetTop==-65||demo[1].offsetTop==65){
-                        demo[1].style.top = '65px';
-                        animateself(demo[1],0)
-                    }
-                    else if(demo[1].offsetTop==0){
-                        animateself(demo[1],-65)
-
-                    }
-                },2000)
-            })();
-            //倒计时事件
-            (function(){
-                var i = document.querySelectorAll('.tao h3 i');
-                var time1 = +new Date()+18000000;
-                var timer = null;
-                timer = setInterval(function(){
-                    var time2 = +new Date();
-                    var h,m,s;
-                    h = +Math.floor((time1-time2)/1000/60/60);
-                    m = +Math.floor(((time1-time2)/1000/60)%60);
-                    s = +Math.floor(((time1-time2)/1000)%60);
-                    h = h<10?'0'+h:h;
-                    s = s<10?'0'+s:s;
-                    m = m<10?'0'+m:m;
-                    i[0].innerHTML = h;
-                    i[1].innerHTML = m;
-                    i[2].innerHTML = s;
-                    if((time1-time2)<=0){
-                        clearInterval(timer);
-                        h='00';
-                        s='00';
-                        m='00';
-                        i[0].innerHTML = h;
-                        i[1].innerHTML = m;
-                        i[2].innerHTML = s;
-                    }
-                },1000)
-            })();
         }
     }
 
@@ -591,11 +540,7 @@
 
 
     }
-    /*.list-1-2>div:nth-child(2n){*/
-        /*flex:1;*/
-        /*width: 45%;*/
 
-    /*}*/
     /*street部分*/
     .street {
         margin: 10px auto 0 auto;

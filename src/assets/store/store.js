@@ -112,6 +112,48 @@ const mutations = {
     close:function(store,uid){
         delete state.car[uid];
         getters.total();
+    },
+    //头条滚动
+    headRolling:function(store,arr){
+
+        clearInterval(arr[0].timer);
+        arr[0].timer = setInterval(function(){
+
+            var step = (arr[1] - arr[0].offsetTop)/10;
+            step = step > 0 ?   Math.ceil(step):Math.floor(step);
+            arr[0].style.top = arr[0].offsetTop + step + "px";
+            if(arr[1] == arr[0].offsetTop){
+                clearInterval(arr[0].timer);
+            }
+        },30)
+    },
+    //倒计时事件
+    countDown:function(store,dom){
+        let i = dom.getElementsByTagName('i');
+        let time1 = +new Date()+18000000;
+        let timer = null;
+                timer = setInterval(function(){
+                    let time2 = +new Date();
+                    let h,m,s;
+                    h = +Math.floor((time1-time2)/1000/60/60);
+                    m = +Math.floor(((time1-time2)/1000/60)%60);
+                    s = +Math.floor(((time1-time2)/1000)%60);
+                    h = h<10?'0'+h:h;
+                    s = s<10?'0'+s:s;
+                    m = m<10?'0'+m:m;
+                    i[0].innerHTML = h;
+                    i[1].innerHTML = m;
+                    i[2].innerHTML = s;
+                    if((time1-time2)<=0){
+                        clearInterval(timer);
+                        h='00';
+                        s='00';
+                        m='00';
+                        i[0].innerHTML = h;
+                        i[1].innerHTML = m;
+                        i[2].innerHTML = s;
+                    }
+                },1000)
     }
 
 }
@@ -159,6 +201,22 @@ const actions = {
     close:function(context,uid){
         context.commit('close',uid)
 
+    },
+    //头条滚动判断
+    headRolling:function(context,dom){
+        setInterval(function(){
+            if(dom.offsetTop==-65||dom.offsetTop==65){
+                dom.style.top = '65px';
+                context.commit('headRolling',[dom,0]);
+            }
+            else if(dom.offsetTop==0){
+                context.commit('headRolling',[dom,-65]);
+            }
+        },2000)
+    },
+    //倒计时事件
+    countDown:function(context,dom){
+        this.commit('countDown',dom)
     }
 }
 export default new Vuex.Store({
