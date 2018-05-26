@@ -150,22 +150,30 @@
                 <div class = "street-left">
                     <h3><img src = "../assets/images/youhaohuo.png" alt = "" width="90px"/><span>与品质生活不期而遇</span></h3>
                     <ul>
-                        <li><img src = "../assets/images/shoe.jpg" alt = ""/>
-                            <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
-                            <span>10人说好</span>
-                        </li>
-                        <li><img src = "../assets/images/imgbag.jpg" alt = ""/>
-                            <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
-                            <span>10人说好</span>
-                        </li>
-                        <li><img src = "../assets/images/imgflower.jpg" alt = ""/>
-                            <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
-                            <span>10人说好</span>
-                        </li>
-                        <li><img src = "../assets/images/imgring.jpg" alt = ""/>
-                            <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
-                            <span>10人说好</span>
-                        </li>
+                        <router-link to="/buy10011">
+                            <li><img src = "../assets/images/shoe.jpg" alt = ""/>
+                                <p>冬季棉拖鞋男士全包跟加厚底防滑室内家居家棉鞋毛绒保暖毛毛拖鞋</p>
+                                <span>451人说好</span>
+                            </li>
+                        </router-link>
+                        <router-link to="/buy10012">
+                            <li><img src = "../assets/images/imgbag.jpg" alt = ""/>
+                                <p>包包2018新款潮真皮女包手提单肩斜跨气质戴妃牛皮中年女士妈妈包</p>
+                                <span>5467人说好</span>
+                            </li>
+                        </router-link>
+                        <router-link to="/buy10013">
+                            <li><img src = "../assets/images/imgflower.jpg" alt = ""/>
+                                <p>Butter Fly蛋糕_花漾芝士礼盒 冰淇淋蛋糕 7寸鲜花蛋糕 成都同城</p>
+                                <span>5464人说好</span>
+                            </li>
+                        </router-link>
+                        <router-link to="/buy10014">
+                            <li><img src = "../assets/images/imgring.jpg" alt = ""/>
+                                <p>[零十原创]根木戒 五行之木 原创设计个性戒指 万物之源 生日礼物</p>
+                                <span>875人说好</span>
+                            </li>
+                        </router-link>
                     </ul>
                 </div>
             </div>
@@ -175,16 +183,18 @@
                     <span>距离结束：</span><i>00</i>:<i>00</i>:<i>00</i>
                     </h3>
                 <ul class="clearfix">
-                    <li>
-                        <img src = "../assets/images/door.jpg" alt = ""/>
-                        <p>TATA木门 现代简约时尚室内门</p>
-                        <span>满额送实木凳</span>
-                        <div class="tao-progress">
-                            <div></div>
-                        </div>
-                        <p>40%<span>已售出1235件</span></p>
-                        <p><span>￥1199</span><i>￥3666.00</i></p>
-                    </li>
+                    <router-link to="/buy10015">
+                        <li>
+                            <img src = "../assets/images/door.jpg" alt = ""/>
+                            <p>TATA木门 现代简约时尚室内门</p>
+                            <span>满额送实木凳</span>
+                            <div class="tao-progress">
+                                <div></div>
+                            </div>
+                            <p>40%<span>已售出1235件</span></p>
+                            <p><span>￥1199</span><i>￥3666.00</i></p>
+                        </li>
+                    </router-link>
                 </ul>
             </div>
         </div>
@@ -664,6 +674,9 @@
         color: #999;
         text-decoration: line-through;
         margin-left: 20px;
+    }
+    .list-3 ul li p:nth-of-type(1){
+        color: #000;
     }
     .footer-index {
         height: 42px;
