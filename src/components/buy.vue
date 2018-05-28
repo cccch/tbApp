@@ -39,9 +39,9 @@
                 <i>全部宝贝</i>
             </div>
             <div class="buy-seller-bottom">
-                <span>宝贝描述：4.9</span>
-                <span>卖家服务：4.8</span>
-                <span>物流服务：4.8</span>
+                <span>宝贝描述:4.9</span>
+                <span>卖家服务:4.8</span>
+                <span>物流服务:4.8</span>
             </div>
         </div>
         <div class="buy-footer">
@@ -121,6 +121,7 @@
 <style>
     #buy {
         background-color: #eee;
+        width: 100%;
     }
     /*大图片部分*/
     .buy-image {
@@ -245,6 +246,7 @@
     .buy-seller {
         margin-top: 10px;
         background-color: #fff;
+        width: 100%;
     }
     .buy-seller-top {
         height: 60px;
@@ -280,13 +282,15 @@
         float: right;
     }
     .buy-seller-bottom {
-        /*height: 160px;*/
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
         padding: 20px 10px 10px;
+        width: 100%;
     }
     .buy-seller-bottom span {
-        font-size: 15px;
+        font-size: 14px;
+        flex: 1;
     }
     .buy-footer {
         height: 50px;

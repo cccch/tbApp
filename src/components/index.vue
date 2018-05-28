@@ -69,18 +69,18 @@
                 <div ref="top-line-banner-box1">
                     <img width="85px" src = "../assets/images/carimg.jpg" alt = ""/>
                     <span>汽车</span>
-                        <span>此车上市有望成为黑马，售价8万左右</span>
+                        <span>此车上市有望成黑马，售价8万左右</span>
                     <br/>
                         <span>垂钓</span>
-                        <span>牢记这2种用饵技能，鲤鱼一钓就上瘾</span>
+                        <span>牢记2种用饵技能，鲤鱼一钓就上瘾</span>
                 </div>
                 <div ref="top-line-banner-box2">
                     <img width="85px" src = "../assets/images/flower.jpg" alt = ""/>
                         <span>时尚</span>
-                        <span>8种自带爆盆体质的多肉，你了解吗？</span>
+                        <span>8种带爆盆体质的多肉，你了解吗？</span>
                     <br/>
                         <span>运动</span>
-                        <span>毕业典礼穿着？AJ11伽玛蓝终于释出</span>
+                        <span>毕业典礼穿着？AJ11伽玛蓝终释出</span>
                 </div>
             </div>
         </div>
@@ -392,6 +392,7 @@
         height: 60px;
         overflow: hidden;
         background-color: #fff;
+        width: 100%;
     }
     .top-line>div:nth-child(1) {
         height: 100%;
@@ -405,17 +406,20 @@
     }
     .top-line-banner {
         height: 100%;
-        padding-left: 60px;
         position: relative;
         top: 0;
+        width: 100%;
     }
     .top-line-banner img {
-        float: right;
+        position: absolute;
+        right: 0;
     }
     .top-line-banner>div{
+        padding-left: 60px;
         height: 100%;
         padding-top: 8px;
         position: absolute;
+        width: 100%;
     }
     .top-line-banner>div:nth-child(1){
         top: 0px;
@@ -477,7 +481,7 @@
 
 
     .list-1-1>div img{
-        height: 135px;
+        height: 127px;
     }
      .list-1-1>div:nth-child(1) span {
          color: #fff;
