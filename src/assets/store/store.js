@@ -10,9 +10,10 @@ var state = {
     nowIndex:0,
     //管理购物车列表信息
     car:{},
+    //总价
     total:0,
+    //全选
     checkAll:false
-
 }
 const getters = {
 
@@ -43,7 +44,7 @@ const mutations = {
     getProductData:function(){
         Vue.http.get('./src/assets/data/data.json').then(function(res){
             state.productData = res.data;
-        },function(){})
+        })
     },
     changeIndex:function(Store,index){
         state.nowIndex = index;
@@ -158,6 +159,7 @@ const mutations = {
 
 }
 const actions = {
+    //获取商品列表
     getProductData:function(context){
         if(JSON.stringify(state.productData==='')){
             context.commit('getProductData')

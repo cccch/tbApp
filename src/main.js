@@ -5,7 +5,6 @@ import VueResource from 'vue-resource'
 import routes from './assets/js/routerConfig/routerConfig.js'
 import MintUI from 'mint-ui'
 import store from './assets/store/store.js'
-//import 'assets/css/main.css'
 import 'mint-ui/lib/style.css'
 Vue.use(VueRouter)
 Vue.use(VueResource)

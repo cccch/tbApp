@@ -285,6 +285,9 @@
         justify-content: space-between;
         padding: 20px 10px 10px;
     }
+    .buy-seller-bottom span {
+        font-size: 15px;
+    }
     .buy-footer {
         height: 50px;
         position: fixed;

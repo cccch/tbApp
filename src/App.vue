@@ -10,9 +10,6 @@
   import {mapGetters,mapActions} from 'vuex'
   export default {
     name: 'app',
-    computed:mapGetters([
-
-    ]),
     methods:mapActions([
       'getProductData'
     ]),
@@ -20,6 +17,7 @@
       'foot':foot
     },
     mounted:function(){
+      //触发获取产品列表函数
       this.getProductData();
     }
 }
