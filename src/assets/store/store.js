@@ -52,7 +52,6 @@ const mutations = {
     //数量增加减少
     add:function(store,uid){
         state.productData.result[uid].productNum++
-        console.log(state.productData.result[uid].productNum);
 
     },
     decrease:function(store,uid){
@@ -108,7 +107,6 @@ const mutations = {
     },
     upChecked:function(store,uid){
         state.car[uid].checked = !state.car[uid].checked;
-        console.log(state.car[uid].checked);
         //更新total
         getters.total()
     },
