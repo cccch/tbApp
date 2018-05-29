@@ -93,6 +93,7 @@
     export default {
         data: function () {
             return {
+                //控制pop状态
                 myPop:false,
             }
         },

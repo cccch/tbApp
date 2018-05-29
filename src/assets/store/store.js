@@ -52,6 +52,7 @@ const mutations = {
     //数量增加减少
     add:function(store,uid){
         state.productData.result[uid].productNum++
+        console.log(state.productData.result[uid].productNum);
 
     },
     decrease:function(store,uid){
@@ -61,13 +62,14 @@ const mutations = {
     },
     //更新购物车列表
     upCar:function(store,uid){
-        state.car[uid] = {};
-        state.car[uid].num = state.productData.result[uid].productNum;
-        state.car[uid].style = state.productData.result[uid].productClass[state.nowIndex];
-        state.car[uid].total = state.car[uid].num*state.productData.result[uid].prodcutPriceNow;
-        state.car[uid].img = state.productData.result[uid].prodcutImg;
-        state.car[uid].title = state.productData.result[uid].producttTitle;
-        state.car[uid].checked = true;
+        let list = {}
+        list.num = state.productData.result[uid].productNum;
+        list.style = state.productData.result[uid].productClass[state.nowIndex];
+        list.total = list.num*state.productData.result[uid].prodcutPriceNow;
+        list.img = state.productData.result[uid].prodcutImg;
+        list.title = state.productData.result[uid].producttTitle;
+        list.checked = true;
+        state.car[uid] = list;
         //更新总价
         getters.total();
     },
